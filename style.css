@@ -1,0 +1,33 @@
+* {
+    font-family: 'Shantell Sans', cursive;
+    margin: 0;
+}
+
+body {
+    background-color: navy;
+    color: orange;
+}
+
+main {
+    background-color: blue;
+    width: 425px;
+    margin: 0 auto;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.botao {
+    border: 2px solid orange;
+    background-color: transparent;
+    font-size: 2rem;
+    color: orange;
+    padding: 0.625rem;
+}
+
+.botao-pi {
+    width: 150px;
+}
+
+.botao-num {
+    width: 60px;
+}
