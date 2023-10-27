@@ -16,6 +16,15 @@ main {
     font-size: 1.5rem;
 }
 
+#par-ou-impar {
+    text-align: center;
+}
+
+#escolha-numeros {
+    display: none;
+    text-align: center;
+}
+
 .botao {
     border: 2px solid orange;
     background-color: transparent;
@@ -30,4 +39,21 @@ main {
 
 .botao-num {
     width: 60px;
+}
+
+#botao-jogar {
+    background-color: navy; /* cor do fundo */
+    color: orange; /* cor do texto */
+    border: 1px solid orange;
+}
+
+.caixa-jogar {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#resultado {
+    display: none;
+    margin: 2rem 0;
+    border: 1px dashed red;
 }
