@@ -15,8 +15,18 @@ function escolherParOuImpar(parOuImpar) {
 function escolherNumero(numeroUsuario) {
     this.numeroUsuario = numeroUsuario;
     console.log(numeroUsuario);
-    // ocultar o painel com os números
-    // bloquear a escolha de mais de uma opção
-    // formatação diferenciada pro número selecionado
+    desabilitarBotoes();
     return numeroUsuario;
+}
+
+function desabilitarBotoes() {
+    for(i = 0; i <= 5; i++) {
+        document.getElementById('b' + i).setAttribute('disabled', true);
+        document.getElementById('b' + i).classList.add('desabilitado');
+    }
+}
+
+function selecionar(id) {
+    const botao = document.getElementById(id);
+    botao.classList.add('selecionado');
 }

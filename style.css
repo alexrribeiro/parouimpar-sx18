@@ -58,3 +58,15 @@ main {
     margin: 2rem 0;
     border: 1px dashed red;
 }
+
+.desabilitado {
+    color: gray;
+    border: 2px solid gray;
+    cursor: default;
+}
+
+.selecionado {
+    color: red;
+    border: 2px solid red;
+    background-color: gold;
+}
