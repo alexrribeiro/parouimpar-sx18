@@ -70,3 +70,11 @@ main {
     border: 2px solid red;
     background-color: gold;
 }
+
+.mensagem {
+    font-size: 3rem;
+}
+
+.centralizado {
+    text-align: center;
+}

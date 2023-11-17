@@ -1,6 +1,7 @@
 const painel1 = document.querySelector("#par-ou-impar");
 const painel2 = document.querySelector("#escolha-numeros");
 const resultado = document.querySelector("#resultado");
+const botaojogar = document.querySelector("#botao-jogar");
 var numeroComputador;
 
 function escolherParOuImpar(parOuImpar) {
@@ -35,6 +36,39 @@ function escolherNumeroComputador() {
     console.log(numeroComputador);
 }
 
+function gerarTextoEscolhaUsuario() {
+    if (parOuImpar == 0) {
+        textoParOuImpar = "Par";
+    } else if (parOuImpar == 1) {
+        textoParOuImpar = "Impar";
+    }
+
+    return textoParOuImpar;
+}
+
+function verificarVencedor() {
+    if ((numeroUsuario + numeroComputador) % 2 == parOuImpar) {
+        vencedor = "Usuário";
+    } else {
+        vencedor = "Computador";
+    }
+
+    return vencedor;
+}
+
 function jogarParOuImpar() {
-    console.log('Chamou a função jogar...');
+    painel2.style.display = 'none';
+    resultado.style.display = 'block';
+    botaojogar.style.display = 'none';
+
+    resultado.innerHTML = "<h2 class='mensagem centralizado'>Resultado: </h2>";
+
+    var parOuImparEscolhido = gerarTextoEscolhaUsuario();
+    escolherNumeroComputador();
+    var nomeVencedor = verificarVencedor();
+
+    console.log("Par ou ímpar?" + parOuImpar);
+    console.log("Usuário escolheu: " + numeroUsuario);
+    console.log("Computador escolheu: " + numeroComputador);
+    console.log("Vencedor: " + nomeVencedor);
 }
