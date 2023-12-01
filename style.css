@@ -78,3 +78,7 @@ main {
 .centralizado {
     text-align: center;
 }
+
+#botao-jogar-novamente {
+    display: none;
+}
